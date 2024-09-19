@@ -1,0 +1,1279 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Reset margins for all sections */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Full Page Hero Section */
+.hero {
+    top: 70px;
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Adjust height as needed */
+    background: url('../images/mainback.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Overlay effect on Hero for the text */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height:10%;
+    background: rgba(0, 0, 0, 0.518);
+}
+
+/* Header Section */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; /* Ensure header is above hero image */
+    margin-top: 10px;
+}
+
+.Upper-header {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 100px;
+    margin-bottom: -50px;
+}
+
+.Upper-left img {
+    height: 40px;
+    padding-left: 30px;
+    margin-top: -10px;
+}
+
+.Upper-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Dropdown Button */
+.dropdown-button {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Add styles for the dropdown arrow */
+.dropdown-button::after {
+    content: ' \25BC'; /* Unicode for downward triangle */
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffffe2;
+    min-width: 200px; /* Ensure minimum width for the dropdown */
+    top: 100%; /* Position below the button */
+    margin-left: 1100px;
+    margin-top: 40px;
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1001; /* Higher z-index to stay above other elements */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: #000000;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #d6d6d6; /* Change color on hover */
+}
+.sign-content {
+    width: 300px;
+}
+.sign-content h4 {
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing below the heading */
+    font-weight: bold; /* Make the text bold */
+}
+
+
+.sing-btn {
+    width: 190px; /* Adjust width to make it look like the image */
+    padding: 10px 20px;
+    margin: 10px auto; /* Centers the buttons horizontally */
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px; /* Adjust the font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    border: 2px solid #80b1f6; /* Border color for both buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #4f95f7; /* Blue background */
+    color: rgb(255, 255, 255); /* White text */
+}
+
+.join-btn {
+    width: 190px; /* Adjust width to make it look like the image */
+    padding: 10px 20px;
+    margin: 10px auto; /* Centers the buttons horizontally */
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px; /* Adjust the font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    border: 2px solid #80b1f6; /* Border color for both buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: white; /* White background */
+    color: #003580; /* Blue text */
+}
+
+.join-btn:hover {
+    background-color: #72a6ee; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+.sing-btn:hover {
+    background-color: #72a6ee; /* Darker blue on hover */
+}
+
+
+/* Down header styles */
+.down-header {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.down-right {
+    display: flex; /* Creates a horizontal layout */
+    align-items: center; /* Vertically aligns items in the center */
+    margin-top: 10px; /* Adjusts top margin */
+    margin-left: 40px;
+}
+
+.line-container {
+    display: flex;
+    flex-direction: column; /* Stacks lines vertically */
+    gap: 10px; /* Space between lines */
+    margin-right: 30px; /* Adds space between the lines and the text */
+}
+
+.line {
+    width: 40px; /* Width of each line */
+    height: 4px; /* Height of each line */
+    background-color: white; /* Color of the lines */
+    border-radius: 20px;
+}
+
+.down-right p{ 
+    color: #fff;
+    font-weight: lighter;
+    font-size: 15px;
+}
+  
+.down-center {
+    margin-top: 10px;
+    margin-left: -200px;
+   
+}
+.down-center img {
+    height: 45px;
+}
+
+.down-left {
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+
+.location-btn {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px ;
+    padding-right: 70px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-left: -50px;
+}
+
+.Book-btn {
+    margin-top: 10px;
+    color:black;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.Book-btn:hover {
+    background-color: #ececec;
+}
+/* General sidebar styling */
+.sidebar {
+    width: 100%;
+    height: 91%;
+    background-color: #211551; /* Dark blue background similar to the image */
+    position: fixed;
+    top: 70px;
+    left: -1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: left 0.6s ease;
+    
+   
+}
+
+/* Close button styling */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1142;
+    padding-bottom: 10PX;
+}
+
+.close-btn {
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 300px;
+}
+
+
+/* Styling the list */
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top : 0px;
+    margin-left: 50px;
+}
+
+.sidebar li.big {
+    margin: 20px 0;
+}
+
+.sidebar li a {
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.sidebar-footer {
+    background-color: #d9e4f0;
+    padding: 20px;
+    width:1600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Bottom section (for contact and rating) */
+h5 {
+    
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 0px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.footer-info {
+    display: flex; /* Flexbox to align items horizontally */
+    gap: 20px; /* Adjusts spacing between the p elements */
+    flex-wrap: wrap; /* Wraps to next line if content overflows */
+}
+
+.footer-info p {
+    margin-right: 50px; /* Removes default margin */
+    padding: 0;
+    font-size: 14px; /* Adjust size as needed */
+}
+
+
+.star {
+    margin-top: -60px;
+    display: inline-block;
+    margin-left: 620px;
+}
+.star img {
+    width: auto;
+    height: 130px;
+}
+
+
+
+.show-header {
+    margin-top: -10px;
+    position: fixed; /* Make the header fixed at the top */
+    top: 0;
+    background-color: #1b1957; /* Set a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visibility */
+}
+
+
+.dynamic-place {
+    margin-top: 200px;
+    display: flex; 
+}
+.dynamic-writing {
+    margin-left: 130px;
+    margin-right: 10px;
+    margin-top: 260px;
+    margin-bottom: 200px;
+    max-width: 380px;
+    padding-right: 40px;
+    background-color: #fff;
+   
+}
+.dynamic-writing h4 {
+    font-size: 30px;
+    color: #080246;
+    margin-bottom: 50px;
+}
+.dynamic-writing p{
+    width: 410px;
+}
+.dynamic-image img {
+    height: 990px;
+    width: auto;
+    margin-top: -80px;
+}
+
+.around-you {
+    margin-top: 200px;
+}
+.around-writing h2{
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Dosis", system-ui;
+    font-size: 60px;
+    color: #003580;
+    margin-bottom: 50px;
+}
+
+
+
+
+.slider-wrapper p {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-family: "Dosis", system-ui;
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 0 10%; /* Adds padding to both sides for partial visibility */
+}
+
+.slider-wrapper {
+    display: flex;
+    margin-left: 150px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    min-width: 60%; /* Reduces image size to 60% of the container width */
+    height: 600px;
+    width: auto;
+    flex: 0 0 60%; /* Ensures the images maintain a 60% width */
+    margin: 0 30px; /* Increases the gap between images */
+}
+
+
+.around-you div {
+    text-align: left;
+}
+
+.slider-button {
+    font-size: 20px;
+    position: absolute;
+    bottom: -10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.slider-button:hover {
+    transform: translateY(-50%) scale(1.2); /* Increases the size when hovered */
+}
+
+.prev {
+    left: 1060px;
+}
+
+.next {
+    left: 1100px;
+}
+
+
+
+.spoiled {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+}
+
+.spoiled-writing {
+    max-width: 50%;
+    color: #2d2457;
+    margin-left: 200px;
+}
+
+.spoiled-writing h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.spoiled-writing p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    max-width: 450px;
+}
+
+.spoiled-writing a {
+    text-decoration: none;
+    color: #2d2457;
+    font-size: 1.5rem;
+    font-family: "Dosis", system-ui;
+}
+
+.spoiled-writing a:hover {
+    text-decoration: underline;
+}
+
+.spoiled-image {
+    margin-right: 200px;
+    max-width: 50%;
+}
+
+.spoiled-image img {
+    height: 400px;
+    width: auto;
+}
+
+
+.Rooms {
+    margin-top: 150px;
+    
+}
+.rooms-writing {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.rooms-writing h2 {
+   
+    font-weight: lighter;
+    font-family: "Dosis", system-ui;
+    font-size: 60px;
+    color: #12025f;
+    margin-bottom: 20px;
+    
+}
+
+.rooms-writing-one-line  {
+    display: flex;
+}
+.rooms-writing-one-line p {
+    color: #000;
+    font-size: 15px;
+    font-weight: lighter;
+    width: 620px;
+}
+.rooms-writing-one-line a {
+    margin-top:20px ;
+    margin-left: 480px;
+    color: #011531;
+    background-color: #fff;
+    border: 2px solid #011531;
+    text-decoration: none;
+    font-size: 1.6em;
+    font-family:"Dosis", system-ui;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease , color 0.3s ease ;
+}
+.rooms-writing-one-line a:hover {
+    background-color: #011531;
+    color: #fff;
+}
+
+.rooms-writing h5 {
+    margin-bottom: 50px;
+    margin-top: -10px;
+    font-size: 1.1em;
+    font-family: "Dosis", system-ui;
+    margin-left: 15px;
+    color: #011531;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #011531 ;
+    max-width: 55px;
+
+}
+
+
+
+
+/* Container for the slider */
+.rooms-slider {
+    position: relative;
+    width: 1400%; /* Increase the overall width of the slider */
+    max-width: 1400px; /* Optional: Set a maximum width for larger screens */
+    margin: auto;
+    overflow: hidden;
+    padding-left: 100px; /* Adjust left padding to show part of the previous image */
+    margin-left: -20px;
+}
+
+/* Container for all slides */
+.slides-container {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+    margin-left: -20%; /* Adjust for centering and showing part of the next image */
+}
+
+/* Styling for individual slides */
+.slide {
+    flex: 0 0 100%; /* Each slide takes 60% of the container's width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    transition: transform 3s ease-in-out;
+    overflow: hidden;
+    margin-right: -550px; /* Adjust spacing between slides */
+    
+}
+.slide p  {
+    margin-left: -750px;
+    font-size: 18px;
+    font-family: "Dosis", system-ui ;
+    font-weight: 500;
+}
+
+
+/* Images within the slides */
+.slide img {
+    height: 600px; /* Maintain aspect ratio */
+    width: auto;
+    object-fit: cover; /* Ensures images cover the space without distortion */
+    margin-bottom: 10px;
+}
+
+/* Buttons for navigation */
+.slider2-button {
+   font-size: 20px;
+   position: absolute;
+   bottom: 22px;
+   transform: translateY(-50%);
+   background-color: transparent;
+   color: rgb(0, 0, 0);
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 1;
+   transition: transform 0.3s ease; /* Adds a smooth transition effect */
+}
+.slider2-button:hover {
+    transform: translateY(-50%) scale(1.2); /* Increases the size when hovered */
+}
+.prev2 {
+    left: 1040px;
+   
+}
+
+.next2 {
+    right: 320px;
+}
+
+/* Numeric indicator for the slider */
+.numeric-indicator {
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Dosis", system-ui;
+    margin-bottom: 50px;
+    bottom: -50px;
+    margin-left: 1000px;
+    margin-top: -50px;
+}
+
+
+
+.resortation {
+    background-color: #e8e5de;
+
+}
+.resortation-writing {
+    display: flex;
+}
+.resortation-writing h2 {
+    font-weight: lighter;
+    font-family: "Dosis", system-ui;
+    font-size: 60px;
+    color: #12025f;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+.resortation-writing a {
+    border: 2px solid #003580 ;
+    margin-top: 60px ;
+    margin-left: 650px;
+    color: #011531;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family:"Dosis", system-ui;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    transition: background-color 0.3s ease , color 0.3s ease ;
+}
+.resortation-writing a:hover {
+    background-color: #003580;
+    color: #e8e5de;
+}
+
+
+
+
+
+.resortation-together {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.changebles {
+    flex-basis: 30%; /* This takes up 30% of the container */
+    max-width: 350px;
+    background-color: transparent;
+    padding: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.changable-title {
+    color: #12025f;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.changable-writing {
+    color: #000;
+}
+
+.resortation-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.resortation-images {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-left: 30px;
+    width: 100%;
+    transition: transform 1.5s ease-in-out;
+    margin-right: 150px;
+    padding-bottom: 100px;
+}
+
+.resortation-images img {
+    width: 900px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 0; /* No margin by default */
+    transition: margin-right 1s ease; /* Add transition to the margin */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1.5s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.resortation-images img.active {
+    opacity: 1;
+    position: relative; /* Make the active one relative to align it properly */
+}
+
+/* Initially, no margin between images */
+.resortation-images img:nth-child(2) {
+    margin-right: 0;
+}
+
+/* When the second image is hovered (or made active), increase the gap between the first and second image */
+.resortation-images img.active:nth-child(2) {
+    margin-left: 50px; /* Increase the gap between first and second image */
+}
+
+/* When the third image is hovered (or made active), increase the gap between the second and third image */
+.resortation-images img.active:nth-child(3) {
+    margin-left: 50px; /* Increase the gap between second and third image */
+}
+
+/* Optional: You can add styles to create a hover effect that mimics this behavior */
+.resortation-images img:hover {
+    margin-right: 50px;
+}
+
+
+
+/* Numeric indicator styling */
+.numeric-indicator2 {
+    position: absolute;
+    bottom: 45px;
+    left: 160px;
+    transform: translateX(-50%);
+    background-color: transparent; /* Semi-transparent background */
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.prev3, .next3 {
+    position: absolute; /* Ensure they are positioned absolutely in relation to a parent element */
+    font-size: 40px;
+    bottom: 0px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.prev3 {
+    left: 110px; /* Adjust this value to position it as needed */
+}
+
+.next3 {
+    right: 1300px; /* Adjust this value to position it as needed */
+}
+
+/* Add hover effects for the buttons */
+.prev3:hover, .next3:hover {
+    transform: translateY(-50%) scale(1.2);
+}
+
+
+.meetings {
+    margin-top: -50px;
+    background: url('../images/stars-back.png') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.meetings h1 {
+    font-weight: lighter;
+    font-family: "Dosis", system-ui;
+    font-size: 60px;
+    color: #12025f;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+.meeting-together {
+    display: flex;
+    
+}
+.meeting-writing {
+    margin-left: 200px;
+    margin-top: 100px ;
+    width: 450px;
+    padding-right: 100px;
+}
+.meeting-writing h2 {
+    color: #080246;
+    font-size: 30px;
+    font-family: "Dosis", system-ui;
+    font-weight: bold;
+}
+.meeting-writing p {
+    margin-bottom: 50px;
+}
+.meeting-writing a {
+    
+    text-decoration: none;
+    color: #2d2457;
+    font-size: 1.6rem;
+    font-family: "Dosis", system-ui;
+}
+
+.meeting-writing a:hover {
+    text-decoration: underline;
+}
+
+.meeting-picture {
+    margin-right: 100px;
+}
+.meeting-picture img {
+    height: 450px;
+    width: auto;
+}
+
+
+.weddings {
+    background: url('../images/inverse-stars-back.png') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+ 
+}
+.wedding-picture{
+    margin-left: 100px;
+    max-width: 50%;
+}
+.wedding-picture img {
+    height: 450px;
+    width:600px;
+}
+.wedding-writing {
+    text-align: left;
+    padding-left: 100px;
+    width: 420px;
+    margin-top: 100px;
+}
+
+.wedding-writing h2 {
+    color: #080246;
+    font-size: 30px;
+    font-family: "Dosis", system-ui;
+    font-weight: bold;
+}
+.wedding-writing p {
+    margin-bottom: 50px;
+}
+.wedding-writing a {
+    
+    text-decoration: none;
+    color: #2d2457;
+    font-size: 1.6rem;
+    font-family: "Dosis", system-ui;
+}
+
+.wedding-writing a:hover {
+    text-decoration: underline;
+}
+
+.services {
+    margin-bottom: 100px;
+}
+.services h1 {
+    font-weight: lighter;
+    font-family: "Dosis", system-ui;
+    font-size: 60px;
+    color: #12025f;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+.sercices-lines {
+    display: flex;
+    padding-right:50px ;
+    justify-content: space-around;
+}
+
+
+/* Style for each item */
+.item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Style the icons */
+.item img {
+    width: 40px; /* Adjust size as necessary */
+    height: auto;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+/* Style the text */
+.item p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.accessibility {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* Style for the heading */
+.accessibility h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a2a72; /* Adjusted to match the image font color */
+    margin-bottom: 15px;
+}
+
+/* Flexbox layout for the text and button */
+.access-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Styling for the paragraph */
+.access-line p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 57%;
+    margin: 0;
+}
+
+/* Styling for the button */
+.access-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #2a2a72; /* Dark blue border */
+    color: #2a2a72; /* Text color same as border */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Hover effect for the button */
+.access-btn:hover {
+    background-color: #2a2a72;
+    color: #fff;
+}
+
+.specials {
+    background: url('../images/stars-back.png') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+  
+  
+}
+.special-together {
+    margin-left: 100px;
+    display: flex;
+    
+}
+.special-together h1 {
+    font-weight: lighter;
+    font-family: "Dosis", system-ui;
+    font-size: 60px;
+    color: #12025f;
+    margin-bottom: 50px;
+    text-align: left;
+}
+.special-together a {
+    padding: 10px 20px;
+    border: 2px solid #2a2a72; /* Dark blue border */
+    color: #2a2a72; /* Text color same as border */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: right;
+    margin-bottom: 500px;
+    margin-top: 70px;
+    margin-left: 800px;
+}
+.special-together a:hover {
+    background-color: #2a2a72;
+    color: #fff;
+}
+
+
+
+
+/* General styling for the container */
+.special-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -420px;
+}
+
+/* Styling for the text content */
+.special-writing {
+    max-width: 45%;
+    padding-right: 20px;
+}
+
+.special-writing h3 {
+    font-size: 28px;
+    color: #2a2a72;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.pees p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: -20px;
+}
+.pees {
+    margin-bottom: 100px;
+}
+
+.special-writing a {
+    color: #2a2a72;
+}
+
+.read-more-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    border: 2px solid #2a2a72;
+    color: #2a2a72;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the read more button */
+.read-more-btn:hover {
+    background-color: #2a2a72;
+    color: #fff;
+}
+
+/* Styling for the image section */
+.special-image img {
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -450px;
+}
+
+
+
+.Gallery-pics {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Adjust the width as necessary */
+    gap: 40px;
+    margin-bottom: 100px;
+    transition: transform 0.5s ease;
+}
+
+.Gallery-pics img {
+    width: 600px;
+    height: auto;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.scroll-button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 1;
+    bottom: 0px;
+    transition: transform 0.3s ease;
+}
+
+
+#prevButton {
+    left: 680px;
+}
+
+#nextButton {
+    right: 700px;
+}
+
+.scroll-button:hover{
+    transform: translateY(-50%) scale(1.2);
+}
+
+
+
+
+.hieghest-footer {
+    background-color: rgba(33,21,81,255); /* Dark purple background */
+    padding: 50px 20px; /* Add padding to the section */
+    color: white; /* White text */
+    font-family: 'Arial', sans-serif; /* Adjust the font */
+}
+
+.f-h-line {
+    height: 75px;
+    width: 1350px;
+    margin-left: 75px;
+}
+.hieghest-footer-together {
+    display: flex; /* Align the content horizontally */
+    justify-content: space-between; /* Space between the columns */
+    align-items: center; /* Vertically align items */
+    max-width: 1300px; /* Control the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding-top: 30px;
+}
+
+.h-f-pic img {
+    max-width: 250px; /* Adjust logo size */
+}
+
+.h-f-writing {
+    flex: 1; /* Allow writing section to take remaining space */
+    margin-left: 100px; /* Space between logo and writing */
+    margin-top: -100px;
+}
+
+.h-f-writing h4 {
+    font-size: 24px; /* Make the title a bit larger */
+    margin-bottom: 20px; /* Add space below the title */
+    font-weight: 500; /* Adjust font weight */
+}
+
+.inside-writing {
+    display: flex; /* Align the inner content horizontally */
+}
+
+.i-w-left, .i-w-right {
+    max-width: 300px; /* Adjust width of each column */
+}
+.i-w-right{
+    max-width: 200px;
+    margin-top: -50px;
+}
+
+.i-w-left a, .i-w-right a {
+    display: block; /* Make the links block-level */
+    margin-bottom: 10px; /* Space between links */
+    color: white; /* White links */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Adjust link font size */
+    max-width: 200px;
+    margin-right: 30px;
+}
+.i-w-left a:hover, .i-w-right a:hover {
+    text-decoration: underline ;
+    width: auto;
+} 
+
+.i-w-left h6, .i-w-right h6 {
+    font-size: 20px; /* Slightly larger for section headings */
+    margin-bottom: 10px; /* Add space below headings */
+    font-weight: 600; /* Slightly bolder headings */
+}
+
