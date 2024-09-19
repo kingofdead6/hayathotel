@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayat Hotel</title>
+    <link rel="shortcut icon" type="x-icon" href="assets/icons/main-logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+   
+</head>
+<body>
+    <!-- Header Section -->
+     
+    <header class="header">
+        <div class="Upper-header">
+            <div class="Upper-left">
+                <a href="index.html"> 
+                    <img src="assets/images/logo.png" alt="Hayat Hotel Logo" class="logo">
+                </a>
+            </div>
+            <div class="Upper-right">      
+                <!-- Language Dropdown -->
+                <div class="language-dropdown dropdown">
+                    <a class="dropdown-button language-button"><img src="assets/icons/web.png" alt="Language Icon">Language</a>
+                    <div class="dropdown-content language-content">
+                        <a href="#">English</a>
+                        <a href="#">Français</a>
+                        <a href="#">Deutsch</a>
+                    </div>
+                </div>                
+                <!-- Sign In/Join Dropdown -->
+                <div class="sign-dropdown dropdown">
+                    <a class="dropdown-button sign-button"><img src="assets/icons/pfp.png" alt="Profile Icon">Sign In or Join</a>
+                    <div class="dropdown-content sign-content">
+                        <h4>Welcome to World of Hyatt</h4>
+                        <a href="#" class="sing-btn">SIGN IN</a>
+                        <a href="#" class="join-btn">JOIN</a>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </header>
+
+    <!-- Down Header Section -->
+    <section class="down-header">
+        <div class="down-right" id="menuToggle" onclick="toggleMenu()">
+            <a href="#Menu"><div class="line-container">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div> </a>
+              <p>HYATT REGENCY ALGIERS AIRPORT</p>
+        </div>
+        <div class="down-center">
+            <a href="#"><img src="assets/images/hotel.png"> </a>
+        </div>
+        <div class="down-left">
+            <a href="#" class="location-btn">LOCATIONS</a>
+            <a href="#" class="Book-btn">BOOK</a>
+        </div>
+    </section>
+
+    <div id="sidebar" class="sidebar">
+        <!-- Close Button -->
+        <div class="menu-header">
+            <button class="close-btn" onclick="toggleMenu()">×</button>
+            <div class="down-center">
+                <a href="#"><img src="assets/images/hotel.png"></a>
+            </div>
+            <div class="down-left">
+                <a href="#" class="location-btn">LOCATIONS</a>
+                <a href="#" class="Book-btn">BOOK</a>
+            </div>
+        </div>
+    
+        <ul>
+            <li class="big"><a href="#">Exclusive Offers</a></li>
+            <li class="big"><a href="#">Dining</a></li>
+            <li class="big"><a href="#">Events & Attractions</a></li>
+            <li class="big"><a href="#">Meetings & Events</a></li>
+            <li class="big"><a href="#">Weddings & Celebrations</a></li>
+            <li class="big"><a href="#">Hotel Information</a></li>
+            <li class="big"><a href="#">Parking & Transportation</a></li>
+            <li class="big"><a href="#">Hotel Policies</a></li>
+            <li class="big"><a href="#">Gallery</a></li>
+            <li class="big"><a href="#">Reviews</a></li>
+        </ul>
+    
+        <!-- Footer Section -->
+        <div class="sidebar-footer">
+            <h5>HYATT REGENCY ALGIERS AIRPORT</h5>
+            <div class="footer-info">
+                <p>Houari Boumediene Airport, 16033 Algiers, Algeria</p>
+                <p>+213 23 55 12 34</p>
+                <p>4.5 (366 Reviews)</p>
+                <div class="star">
+                    <img src="assets/images/star.png" alt="Star Rating">
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+    </section>
+
+    <section class="dynamic-place">
+        <div class="dynamic-writing">
+            <h4>A dynamic place directly connected to Algiers airport</h4>
+            <p>Situated in a strategic location in the wonderful city of Algiers, Hyatt Regency Algiers Airport offers state-of-the-art amenities to stay connected. Our rooms are equipped with all the comforts for a memorable stay. Discover our Palmette dining options, which will capture your senses through authentic cuisine full of flavors.</p>
+        </div>
+        <div class="dynamic-image">
+            <img src="assets/images/place-hotel-star.png">
+        </div>
+    </section>
+
+    <section class="around-you">
+        <div class="around-writing">
+            <h2>LOOK AROUND YOU</h2>
+        </div>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <!-- Duplicate last image at the beginning -->
+                <div class="business-center">
+                    <a href="#"><img src="assets/images/business.png" alt="Business Center" class="slider-image"></a>
+                    <p>Business center</p>
+                </div>
+    
+                <!-- Original images -->
+                <div class="pool">
+                    <a href="#"><img src="assets/images/pool.png" alt="Pool" class="slider-image"></a>
+                    <p>Pool</p>
+                </div>
+                <div class="business-center">
+                    <a href="#"><img src="assets/images/business.png" alt="Business Center" class="slider-image"></a>
+                    <p>Business center</p>
+                </div>
+                <div class="fitness-center">
+                    <a href="#"><img src="assets/images/fitness.png" alt="Fitness Center" class="slider-image"></a>
+                    <p>Fitness center</p>
+                </div>
+                <div class="pool">
+                    <a href="#"><img src="assets/images/pool.png" alt="Pool" class="slider-image"></a>
+                    <p>Pool</p>
+                </div>
+    
+                <!-- Duplicate first image at the end -->
+                <div class="business-center">
+                    <a href="#"><img src="assets/images/business.png" alt="Business Center" class="slider-image"></a>
+                    <p>Business center</p>
+                </div>
+            </div>
+            <button class="slider-button prev">&#11013;</button>
+            <button class="slider-button next">&#10145;</button>
+        </div>
+    </section>
+     
+    <section class="spoiled">
+        <div class="spoiled-writing">
+            <h4>Be more spoiled</h4>
+            <p>With Milestone Rewards, choose rewards that matter to you or gift them to someone special. Use points to earn free nights, Club access, suite upgrades to enhance your stay, or wellness experiences. Rewards begin after 20 qualifying nights and continue for every 10 qualifying nights, up to 150 nights.</p>
+            <a href="#">View Milestone Rewards  &#10145; </a>
+        </div>
+        <div class="spoiled-image">
+            <img src="assets/images/spoiled.png">
+        </div>
+    </section>
+
+    <section class="Rooms">
+        <div class="rooms-writing">
+            <h2>Rooms and suites</h2>
+            <div class="rooms-writing-one-line">
+            <P>Stay in one of the 320 modern rooms at Hyatt Regency Algiers Airport. Enjoy a Regency Club room and complimentary access to our Regency Club Lounge, featuring stunning views of the international airport.</P>
+            <a href="#">All rooms and suites</a>
+            </div>
+            <h5>ROOMS</h5>
+        </div>
+        <div class="rooms-slider">
+            <div class="slides-container">
+                <div class="slide">
+                    <img src="assets/images/delux.png" alt="Deluxe Room">
+                    <p>Deluxe Room with 1 King Bed and Club Access</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/bed.png" alt="1 King Bed">
+                    <p>1 King bed</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/twin.png" alt="2 Twin Beds">
+                    <p>2 twin beds</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/king.png" alt="Deluxe Room with 1 King Bed">
+                    <p>Deluxe Room with 1 King Bed</p>
+                </div>
+                <div class="slide">
+                    <img src="assets/images/king.png" alt="1 King Bed and Club Access">
+                    <p>1 King bed and Club access</p>
+                </div>
+            </div>
+            <button class="slider2-button prev2">&#11013;</button>
+            <button class="slider2-button next2">&#10145;</button>
+        
+            <!-- Numeric Indicator -->
+            <div class="numeric-indicator"></div>
+        </div>
+        
+        
+    </section>
+    
+
+    <section class="resortation">
+        <div class="resortation-writing">
+            <h2>RESTORATIONS</h2>
+            <a href="#">Discover all restaurants (3)</a>
+        </div>
+        <div class="resortation-slider">
+            <div class="resortation-together">
+                <div class="changebles">
+                    <div class="changable-title">Room service</div>
+                    <div class="changable-writing">Our room service is convenient for early risers, late lunches, and dinners. From snacks to full meals, we offer the dishes of your choice served in the private atmosphere of your room.</div>
+                </div>
+                <div class="resortation-images">
+                    <img src="assets/images/room-service.png" id="slide1" alt="Image 1" class="active">
+                    <img src="assets/images/bar-palmet.png" id="slide2" alt="Image 2">
+                    <img src="assets/images/palmet-restaurant.png" id="slide3" alt="Image 3">
+                </div>
+            
+            </div>
+        
+            <!-- Navigation Buttons -->
+            <button class="prev3">‹</button>
+            <button class="next3">›</button>
+        
+            <!-- Numeric Indicator -->
+            <div class="numeric-indicator2">1 / 3</div>
+        
+            <!-- Text that changes based on the slide -->
+        </div>
+    </section>
+
+
+    <section class="meeting-wedding">
+         <div class="meetings">
+            <h1>MEETINGS AND WEDDINGS</h1>
+            <div class="meeting-together">
+                <div class="meeting-writing">
+                     <h2>Meetings and Events</h2>
+                     <p>In order to meet professional standards and customer expectations using the latest technologies, our organization specialists do everything possible to ensure the success of your event.</p>
+                     <a href="#">See details</a>
+                </div>
+                <div class="meeting-picture">
+                     <img src="assets/images/meeting.png">
+                </div>
+            </div>
+         </div>
+         <div class="weddings">
+            <div class="wedding-picture">
+                 <img src="assets/images/wedding.png">
+            </div>
+            <div class="wedding-writing">
+                <h2>Weddings and celebrations</h2>
+                <p>The perfect urban setting for your special day, our elegant reception hall is the setting for one-of-a-kind weddings, celebrations and cocktail parties.</p>
+                <a href="#">See details</a>
+           </div>
+         </div>
+    </section>
+
+
+    <section class="services">
+        <h1>SERVICES</h1>
+        <div class="sercices-lines">
+        <div class="line1">
+            <div class="item">
+                <img src="assets/icons/printing.png" alt="Business Services">
+                <p>Business Services</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/weight.png" alt="Fitness center">
+                <p>Fitness center</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/improve.png" alt="Meeting spaces">
+                <p>Meeting spaces</p>
+            </div>
+        </div>
+        
+        <div class="line2">
+            <div class="item">
+                <img src="assets/icons/cheff.png" alt="Concierge">
+                <p>Concierge</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/wifi.png" alt="Free internet access">
+                <p>Free internet access</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/swimming.png" alt="Pool">
+                <p>Pool</p>
+            </div>
+        </div>
+        
+        <div class="line3">
+            <div class="item">
+                <img src="assets/icons/online-registration.png" alt="Online registration">
+                <p>Online registration</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/parking.png" alt="Free parking">
+                <p>Free parking</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/spoon-and-fork.png" alt="Restaurant on site">
+                <p>Restaurant on site</p>
+            </div>
+        </div>
+        
+        <div class="line4">
+            <div class="item">
+                <img src="assets/icons/digital-key.png" alt="Digital key">
+                <p>Digital key</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/laundry.png" alt="Laundry">
+                <p>Laundry</p>
+            </div>
+            <div class="item">
+                <img src="assets/icons/room-service.png" alt="Room service">
+                <p>Room service</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="accessibility">
+        <h2>Accessibility in our hotel</h2>
+        <div class="access-line">
+            <p>We are committed to equal access and opportunities for people with reduced mobility. The facilities of this hotel also make it more accessible to elderly people with reduced mobility to ensure their perfect stay. Our main objective is to improve the ergonomics of the equipment and movement within the hotel for all customers.</p>
+            <a href="#" class="access-btn">Show accessibility features</a>
+        </div>
+    </section>
+    
+    
+    <section class="specials">
+        <div class="special-together">
+            <h1>SPECIAL OFFERS</h1>
+            <a href="#">Show all offers</a>
+        </div>
+        <div class="special-box">
+            <div class="special-writing">
+                <h3>Member rate</h3>
+                <div class="pees">
+                <p id="p1">Enjoy even more rewarding stays when you book smart, only on hyatt.com. Members save more. Book a standard or premium room at participating hotels.</p>
+                <p id="p2">Not a World of Hyatt member? Join now or when you book to enjoy exclusive member benefits like this.</p>
+                <p id="p3">Terms and conditions apply to this offer.</p>
+            </div>
+                <a href="#" class="read-more-btn">READ MORE</a>
+            </div>
+            <div class="special-image">
+                <img src="assets/images/special.png" alt="Couple walking in a hotel lobby">
+            </div>
+        </div>
+        
+    </section>
+ 
+    <section class="gallerie">
+        <div class="special-together">
+            <h1>Gallery</h1>
+            <a href="#">Show all</a>
+        </div>
+
+
+        <div class="gallery-container">
+            <button id="prevButton" class="scroll-button">←</button>
+            
+            <div class="Gallery-pics">
+                <!-- Clone the last image at the beginning for smooth infinite scroll -->
+                <img src="assets/images/pic5.png" alt="pic5-clone">
+                
+                <!-- Original images -->
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                <img src="assets/images/pic1.png" alt="pic1">
+                <img src="assets/images/pic2.png" alt="pic2">
+                <img src="assets/images/pic3.png" alt="pic3">
+                <img src="assets/images/pic4.png" alt="pic4">
+                <img src="assets/images/pic5.png" alt="pic5">
+                
+                <!-- Clone the first image at the end for smooth infinite scroll -->
+                <img src="assets/images/pic1.png" alt="pic1-clone">
+            </div>
+            
+            <button id="nextButton" class="scroll-button">→</button>
+        </div>
+        
+        
+        
+    </section>
+
+    <section class="hieghest-footer">
+        <div class="hieghest-footer-together">
+            <div class="h-f-pic">
+                <img src="assets/images/logo10.png">
+            </div>
+            <div class="h-f-writing">
+                <h4>Hyatt Regency Algiers Airport</h4>
+                <div class="inside-writing">
+                    <div class="i-w-left">
+                        <a href="#">Houari Boumediene Airport, 16033 Algiers, Algeria</a><br>
+                        <a href="#">Tel.: +213 23 55 12 34</a>
+                        <h6>Social networks</h6>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div class="i-w-right">
+                        <h6>Hotel information and requests</h6>
+                        <a href="#">algiers.regency@hyatt.com</a><br>
+                        <a href="#">Hotel Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/logo11.png" class="f-h-line">
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
